@@ -1520,8 +1520,7 @@ features of crime dataset are the ones that describe the type of crime, the
 place of occurrence, date and year when they occurred so we select </span><i><span
 style='font-size:12.0pt;line-height:105%;font-family:"Courier New"'>'offense_code_group'',
 'street', 'occurred_on_date', 'year', 'lat', 'long'</span></i><span
-style='font-size:12.0pt;line-height:105%;font-family:"Segoe UI Historic",sans-serif'><span
-style='mso-spacerun:yes'>  </span>and drop rest of the features from the crime
+style='font-size:12.0pt;line-height:105%;font-family:"Segoe UI Historic",sans-serif'>and drop rest of the features from the crime
 incident data provided by BPD. Subsequently the selected features are renamed
 as </span><i><span style='font-size:12.0pt;line-height:105%;font-family:"Courier New"'>'Offense',
 'Street', 'Date', 'Year', 'Latitude', 'Longitude' </span></i><span
@@ -1545,7 +1544,7 @@ style='font-size:12.0pt;line-height:105%;font-family:"Segoe UI Historic",sans-se
 8.0pt;margin-left:2.5in;text-align:justify;line-height:115%'><span
 style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI Historic",sans-serif'>Similarly,
 the relevant fields in the json response obtained from the explore endpoint of
-Foursquare API are venue’s name, category and its latitude, longitude which are
+Foursquare API are venue's name, category and its latitude, longitude which are
 extracted to create Boston Venues dataset </span><b><i><span style='font-size:
 12.0pt;line-height:115%;font-family:"Courier New"'>bv_df</span></i></b><span
 style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI Historic",sans-serif'>.
@@ -1660,7 +1659,7 @@ line-height:105%;font-family:"Segoe UI Historic",sans-serif'>Methodology <o:p></
 <p class=MsoNormal style='margin-top:0in;margin-right:147.75pt;margin-bottom:
 8.0pt;margin-left:2.5in;line-height:115%'><span style='font-size:12.0pt;
 line-height:115%;font-family:"Segoe UI Historic",sans-serif'>The moment to
-finally peek into the data has arrived, let’s look at the distribution of
+finally peek into the data has arrived, let's look at the distribution of
 Latitude and Longitudes in geo-spatial dataset of Boston's crime incidents
 using Scatter Plot and here you go - Surprise !!<o:p></o:p></span></p>
 
@@ -1679,7 +1678,7 @@ style='font-size:12.0pt;line-height:105%;font-family:"Segoe UI Historic",sans-se
 line-height:115%;font-family:"Segoe UI Historic",sans-serif'>The plot suggest
 outliers all of certain specific value and somewhere near (0,0). On further
 examination it is revealed as value of -1 for Latitude and Longitude in certain
-incident records. Let’s drop these records as before and re-examine the Scatter
+incident records. Let's drop these records as before and re-examine the Scatter
 Plot which now looks perfect<o:p></o:p></span></p>
 
 <p class=MsoNormal align=center style='margin-top:0in;margin-right:147.75pt;
@@ -1726,10 +1725,9 @@ line-height:105%;font-family:"Segoe UI Historic",sans-serif'>The analysis is
 based on the examination of all reported incidents in certain specific preset
 radius around a given venue. The specific preset chosen for present analysis is
 500 mtrs. To find out if a reported incident falls within this specific preset
-radius around the given venue we use Python’s GeoPy<sup><a
+radius around the given venue we use Python's GeoPy<sup><a
 href="https://geopy.readthedocs.io/en/stable/"><span style='text-decoration:
-none;text-underline:none'>[2]</span><span style='text-decoration:none;
-text-underline:none;vertical-align:baseline'> </span></a></sup><span
+none;text-underline:none'>[2]</span></a></sup><span
 style='mso-spacerun:yes'> </span></span><span class=pre><i><span
 style='font-size:12.0pt;line-height:105%;font-family:"Courier New"'>geopy.distance.distance</span></i></span><span
 class=pre><span style='font-size:10.0pt;line-height:105%;font-family:"Courier New"'>
@@ -1846,7 +1844,7 @@ style='font-size:12.0pt;line-height:105%;font-family:"Segoe UI Historic",sans-se
 <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:147.75pt;
 margin-bottom:8.0pt;margin-left:2.5in;mso-add-space:auto'><span
 style='font-size:12.0pt;line-height:105%;font-family:"Segoe UI Historic",sans-serif'>To
-understand the results let’s look at the plots of average probabilities of
+understand the results let's look at the plots of average probabilities of
 occurrence of a given offense in each cluster<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:147.75pt;
